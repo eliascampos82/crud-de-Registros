@@ -1,0 +1,416 @@
+
+/* *****************************Navbar**************************** */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+.fondo{
+  color: #030303;
+  font-size: 20px;
+  font-family: Verdana, Tahoma, sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #030303;
+  padding: 10px;
+}
+
+.navbar-left h1 {
+  color: white;
+  margin: 0;
+  font-family: "Rubik Doodle Shadow" ;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: rgb(101, 101, 241);
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-right {
+    margin-top: 10px;
+  }
+
+  .navbar-links {
+    margin-top: 10px;
+  }
+
+  .navbar-link {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  /* Media Query para pantallas más pequeñas (a partir de 450px) */
+  @media (max-width: 450px) {
+    .navbar-links {
+      display: flex;;
+      flex-direction: column; 
+    }
+  }
+}
+
+
+
+/* *********************************** agregarRegistro********************************** */
+
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  margin-top: -120px;
+  font-family: Verdana, sans-serif;
+  
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px; 
+}
+
+.card h2 {
+  margin-bottom: 10px;
+}
+
+.card label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.card input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.card button {
+  background-color: #4caf50;
+  color: #ffffff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #45a049;
+}
+
+
+/* ********************************buscarregistros************************************ */
+
+
+.BuscarRegistros {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  font-family: 'Verdana', sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.BuscarRegistros h1 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.BuscarRegistros label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.BuscarRegistros input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 2px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+.BuscarRegistros button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.BuscarRegistros button:hover {
+  background-color: #45a049;
+}
+
+.BuscarRegistros p {
+  color: red;
+  margin-top: 8px;
+}
+
+
+/* ************************ModificarRegistros************************************* */
+
+
+.ModificarRegistros {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+  font-family: Verdana,sans-serif;
+}
+
+.ModificarRegistros h1 {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.ModificarRegistros label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 10px;
+  font-weight: bold;
+ 
+} 
+
+.ModificarRegistros input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px; 
+  box-sizing: border-box;
+  margin-bottom: -5px;}
+
+.ModificarRegistros button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.ModificarRegistros button:hover {
+  background-color: #45a049;
+}
+
+.ModificarRegistros p {
+  color: red;
+  margin-top: 10px;
+} 
+/* 
+********************************************eliminarregistros************************************ */
+
+
+.eliminarRegistros {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  font-family: Verdana, sans-serif;
+}
+
+.eliminarRegistros h1 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.eliminarRegistros label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.eliminarRegistros input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+.eliminarRegistros button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.eliminarRegistros button:hover {
+  background-color: #45a049;
+}
+
+.eliminarRegistros p {
+  color: red;
+  margin-top: 8px;
+}
+
+
+@media (max-width: 768px) {
+  .eliminarRegistros {
+    max-width: 100%;
+  }
+} 
+
+
+@media (max-width: 480px) {
+  .eliminarRegistros input {
+    width: 100%;
+  }
+
+.eliminarRegistros button {
+    width: 100%;
+  }
+}
+
+/* *******************************mostrarRegistros*********************************** */
+  
+.mostrarRegistros h2 {
+  margin-bottom: 10px;
+}
+
+.mostrarRegistros ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mostrarRegistros li {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.mostrarRegistros input {
+  margin-right: 10px;
+  flex: 30%; 
+}
+
+.mostrar {
+  display: flex;
+  flex-direction: column;
+  flex: 70%; 
+}
+
+.infoContainer {
+  margin-bottom: 5px;
+}
+
+
+.mostrarRegistros input {
+  margin-right: 10px;
+}
+
+.infoContainer {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+} 
+
+
+
+
+/* ************************listarregistros**************************************************** */
+
+.listarRegistrosContainer {
+  font-family: 'Verdana', sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.listarRegistrosContainer h1 {
+  margin-bottom: 30px;
+}
+
+.registrosList {
+  list-style: none;
+  padding: 0;
+}
+
+.registroItem {
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 15px;
+}
+
+.registroInfo {
+  margin: 0;
+}
+
+/* ************************************FOOTER********************************************** */
+
+
+body{
+  position: relative;
+  min-height: 100vh;
+  font-family: Verdana, sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 1vh;
+  
+} 
+
+
+
+.footer {
+  background-color: #070707;
+  color: white;
+  text-align: center;
+  font-family: Verdana, sans-serif;
+  /* margin-bottom: 20px; */
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+
